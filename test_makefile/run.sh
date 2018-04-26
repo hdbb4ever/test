@@ -1,22 +1,31 @@
 #!/bin/bash
 
+bash_emit="[BASH]:";
 make clean
 
-echo "testing phony"
+echo "${bash_emit}testing phony"
 echo ""
+
+echo "${bash_emit}make ta1"
 make ta1
 echo ""
 echo ""
-make ta2
-echo ""
-echo ""
-make ta1
-echo ""
-echo ""
+
+echo "${bash_emit}make ta2"
 make ta2
 echo ""
 echo ""
 
-echo "testing default rules"
+echo "${bash_emit}make ta1"
+make ta1
+echo ""
+echo ""
+
+echo "${bash_emit}make ta2"
+make ta2
+echo ""
+echo ""
+
+echo "${bash_emit}testing default rules --> make"
 echo ""
 make 
