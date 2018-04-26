@@ -1,0 +1,20 @@
+
+# undo the commits with the changes
+git reset -hard <hash-id>
+
+# undo the commits but keep the changes
+git reset <hash-id>
+
+# undo the stage 
+  (use "git reset HEAD <file>..." to unstage)
+git reset HEAD some_file
+
+# continued to amend the current commit
+git commit -m 'initial commit'
+git add forgotten_file
+git commit --amend
+
+# Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
